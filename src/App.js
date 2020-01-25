@@ -2,16 +2,33 @@ import React, { Component } from 'react';
 import Main from './components/MainComponent';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
+// import { Switch, Route, Redirect, withRouter } from 'react-router-dom'
+// import { connect } from 'react-redux';
+import { Provider } from 'react-redux';
+import { ConfigureStore } from './redux/configureStore';
+
+const store = ConfigureStore();
+
+const mapStateToProps = state => {
+   return {
+      dishes: state.dishes,
+      comments: state.comments,
+      promotions: state.promotions,
+      leaders: state.leaders
+   }
+}
 
 class App extends Component {
 
    render() {
       return (
-         <BrowserRouter>
-            <div className="App">
-               <Main />
-            </div>
-         </BrowserRouter> 
+         <Provider store={store}>
+            <BrowserRouter>
+               <div className="App">
+                  <Main />
+               </div>
+            </BrowserRouter> 
+         </Provider>
       );
    }
 }
