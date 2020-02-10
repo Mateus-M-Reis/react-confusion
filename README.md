@@ -7,7 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The project was developped as part of grading criteria on the [Full-Stack Web Development with React Specialization](https://www.coursera.org/specializations/full-stack-react?) course ofered by [The Hong Long University os Science and Technology](https://www.ust.hk/) on [Coursera](https://www.coursera.org/).
 
 ## About
-This is meant to be a restaurant site template made on top of react, reactstrap, redux, fetch, json-server.
+This is meant to be a restaurant site template made on top of [react](https://github.com/facebook/react), [reactstrap](https://github.com/reactstrap/reactstrap), [redux](https://github.com/reduxjs/redux), [fetch](https://github.com/github/fetch) and [json-server](https://github.com/typicode/json-server).
+
 ![](https://github.com/Mateus-M-Reis/react-confusion/blob/master/readme_files/confusion.gif)
 
 ## Installation
