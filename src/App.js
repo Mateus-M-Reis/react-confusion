@@ -9,15 +9,6 @@ import { ConfigureStore } from './redux/configureStore';
 
 const store = ConfigureStore();
 
-const mapStateToProps = state => {
-   return {
-      dishes: state.dishes,
-      comments: state.comments,
-      promotions: state.promotions,
-      leaders: state.leaders
-   }
-}
-
 class App extends Component {
 
    render() {
